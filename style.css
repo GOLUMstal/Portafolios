@@ -1,0 +1,208 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    --text-primary: #333;
+    --text-secondary: #ececec;
+    --background: #f8f8f8;
+    --bg-primary: #4d4d4d;
+    --bg-secondary: #B2CFF7;
+    --bg-tertiary: #84a3cf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: var(--text-primary);
+    overflow-x: hidden;
+    font-weight: 300;
+    background-color: var(--background);
+}
+
+.perfilgrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+    background-color: var(--bg-secondary);
+}
+
+.perfil {
+    margin: 20px;
+    margin-left: 120px;
+}
+
+.foto {
+    text-align: left;
+}
+
+.nombre {
+    border-color: #333;
+}
+
+.perfil img {
+    width: 27%;
+    height: auto;
+    grid-column: 1/5;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.descripcion {
+    text-align: left;
+    margin: 50px;
+}
+
+.p {
+    margin: 20px;
+    height: 10px;
+}
+
+.descripcion p {
+    color: var(--text-primary);
+    height: 70px;
+}
+
+.descripcion h2 {
+    margin: 13px;
+}
+
+.experiencia{
+    align-content: center;
+}
+
+.experiencia table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.experiencia th, .experiencia td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* button[onclick] {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+} */
+
+ /* button[onclick]:hover{
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+button[onclick]:active {
+    opacity: 0.8;
+} */
+
+a button {
+    width: 180px;
+    background-color: var(--bg-secondary);
+    margin: 8px;
+    color: var(--text-primary);
+    padding: 10px 20px;
+    margin-left: 44.5%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 20px;
+}
+
+a button:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+a button:active {
+    opacity: 0.8;
+} 
+
+footer {
+    padding: 20px;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    /* Estilos generales del botón */
+    width: 180px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff; /* Color de texto blanco */
+    background-color: var(--bg-secondary); /* Color de fondo azul */
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  
+    /* Añadir sombra */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar horizontalmente el contenido */
+  }
+  
+.boton:hover {
+    background-color: var(--bg-tertiary); /* Color de fondo más oscuro en hover */
+    color: var(--text-secondary);
+  }
+  
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: var(--bg-secondary);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0,2s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+button[type="submit"]:active {
+    opacity: 0.8;
+} 
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.copyright{
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .perfil-grid {
+        grid-template-columns: 1fr;
+    }
+}
